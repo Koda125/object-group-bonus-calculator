@@ -50,8 +50,23 @@ console.log('array of employee data: ',  employees );
 //
 function calculateIndividualEmployeeBonus( employee ) {  
   // your logic here
+  //Loop through the employees array as an argument. Use a for of loop
+  //Create new variable inside function that holds the desired value and returns it in the end. 
+  let bonus = []
+  for (const person of employees){
+    console.log(person)
+    if (person.reviewRating === 3)
+    //if true, take anualSalary multiply by 4%
+   bonus.push(person.annualSalary * .04)
+   // else (persone.reviewRating === 4 )
+  }
+  // function run through the employees array with an argument for employee name
   
+// If clause to see if the desired employee's number is equal to 4. 
+ 
   
   // return new object with bonus results
 
 }
+
+console.log(calculateIndividualEmployeeBonus('Atticus'))
